@@ -1,0 +1,53 @@
+<nav class="navbar p-3">
+  <!-- Logo -->
+	<img class="logo d-none d-lg-block" src="assets/img/logo.svg">
+	<!-- Botón de colapso -->
+	<div class="collapse-btn d-flex d-lg-none">
+    <img class="logo-mobile" src="assets/img/logo.svg">
+    <fa-icon
+      (click)="isCollapsed = !isCollapsed"
+      class="icon"
+      [icon]="collapse"
+      [fixedWidth]="true"
+      size="3x"></fa-icon>
+  </div>
+  <!-- Navegación -->
+  <div class="collapse" [collapse]="isCollapsed" [isAnimated]="true">
+    <div class="navbar-nav">
+      <div class="nav-item">
+        <a class="nav-link" href="#inicio" (click)="collapseNavbar()">
+          <fa-icon [icon]="home" [fixedWidth]="true"></fa-icon> Inicio
+        </a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#sobre" (click)="collapseNavbar()">
+          <fa-icon [icon]="info" [fixedWidth]="true"></fa-icon> Sobre az! player
+        </a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#cambios" (click)="collapseNavbar()">
+          <fa-icon [icon]="changes" [fixedWidth]="true"></fa-icon> Cambios
+        </a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#descargas" (click)="collapseNavbar()">
+          <fa-icon [icon]="download" [fixedWidth]="true"></fa-icon> Descargas
+        </a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link support" href="#" (click)="collapseNavbar()">
+          <fa-icon class="icon-container" [classes]="['icon']" [icon]="heart" [fixedWidth]="true"></fa-icon> Apoya al proyecto
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Derechos de autor -->
+  <div class="copyright d-none d-lg-block">
+    <p class="no-margin">Copyright © 2019 Alejandro Suárez</p>
+    <div class="github">
+      <a class="github-link" href="https://github.com/AlexAzumi">
+        <fa-icon [icon]="github" [fixedWidth]="true"></fa-icon> AlexAzumi
+      </a>
+    </div>
+  </div>
+</nav>

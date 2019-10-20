@@ -1,0 +1,47 @@
+/* Requerido por Bootstrap */
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+// Colores
+$title-color: #252525;
+
+// Fork me on HitHub
+.fork-github {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+// Título
+.title {
+	align-items: center;
+	background-color: $light;
+	color: $title-color;
+	display: flex;
+	font-size: 3rem;
+	font-weight: 700;
+	justify-content: center;
+	margin-top: 1rem;
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: 0 1px 2px rgba($color: $dark, $alpha: 0.5);
+
+	.logo {
+		height: 65px;
+		padding-right: 1rem;
+	}
+}
+
+// Captura de az! player
+.screenshot-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+	width: 100%;
+
+	.screenshot {
+		width: 90%;
+		box-shadow: 0 0 5px rgba($color: $dark, $alpha: 0.5);
+	}
+}

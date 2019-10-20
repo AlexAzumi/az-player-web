@@ -1,0 +1,107 @@
+// Variables de Bootstrap
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+// Colores
+$primary: #FF518C;
+$navbar-bg: #252525;
+
+.navbar {
+  background-color: $navbar-bg;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+	.collapse-btn {
+    color: $light;
+    align-content: center;
+
+    .icon {
+      margin-left: auto;
+    }
+  }
+
+  .collapse {
+    display: none;
+
+    &:not(.show) {
+      display: none;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: block !important;
+    }
+  }
+
+  // Logo
+  .logo {
+		filter: brightness(70%);
+		width: 70px;
+    align-self: center;
+		margin-bottom: 1.5rem;
+		transition: filter 250ms;
+
+		&:hover {
+			filter: brightness(100%);
+		}
+  }
+
+  .logo-mobile {
+    width: 40px;
+  }
+
+  // Navegación
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+
+    // Contenedor
+    .nav-item {
+      padding-top: 0.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid rgba($color: $light, $alpha: 0.5);
+
+      // Enlace
+      .nav-link {
+        display: block;
+        color: rgba($color: $light, $alpha: 0.7);
+        transition: 150ms;
+
+        &:hover {
+          color: $light;
+          padding-left: 0.75rem;
+          text-decoration: none;
+				}
+
+				// Apoyo
+				&.support {
+					color: $primary;
+				}
+      }
+    }
+  }
+
+  // Derechos de autor
+  .copyright {
+		color: $light;
+		padding-top: 1rem;
+    margin-top: auto;
+    text-align: center;
+
+    // Sin márgen
+    .no-margin {
+      margin: 0;
+    }
+
+    // Enlace a perfil de GitHub
+    .github {
+      display: block;
+
+      .github-link {
+        color: $primary;
+      }
+    }
+  }
+}

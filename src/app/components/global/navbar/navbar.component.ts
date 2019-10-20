@@ -39,4 +39,21 @@ export class NavbarComponent {
       this.isCollapsed = true;
     }
   }
+
+  /**
+   * Ir a elemento de menera fluída
+   * @param id ID de elemento
+   */
+  public scrollTo(id: string): boolean {
+    const element = document.getElementById(id);
+    element.scrollIntoView({behavior: 'smooth'});
+    return false;
+  }
+
+  /**
+   * Abrir modal de ayuda
+   */
+  public openSupport(): boolean {
+    return false;
+  }
 }

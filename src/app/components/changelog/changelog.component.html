@@ -1,0 +1,14 @@
+<div id="cambios" class="title">
+	<p class="m-0">Cambios</p>
+</div>
+
+<div class="about-container">
+  <ngx-md class="about-information markdown" *ngIf="repositoryService.changelog; else noContent">
+    {{repositoryService.changelog}}
+  </ngx-md>
+  <ng-template #noContent>
+    <p class="about-information">
+      No se pudo obtener la información
+    </p>
+  </ng-template>
+</div>

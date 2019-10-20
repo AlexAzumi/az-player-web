@@ -3,6 +3,13 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 
+// Colores
+$primary: #FF518C;
+
+$theme-colors: (
+  'primary': $primary
+);
+
 
 /* Estilos personalizados */
 
@@ -13,7 +20,6 @@ html, body {
 
 body {
 	background-image: url('assets/img/bg.png');
-	background-attachment: fixed;
 }
 
 // Icono de corazón
@@ -53,6 +59,7 @@ body {
 
 
 /* Opcional de Bootstrap */
+@import '~bootstrap/scss/buttons';
 @import '~bootstrap/scss/grid';
 @import '~bootstrap/scss/reboot';
 @import '~bootstrap/scss/utilities/display';

@@ -15,27 +15,27 @@
   <div class="collapse" [collapse]="isCollapsed" [isAnimated]="true">
     <div class="navbar-nav">
       <div class="nav-item">
-        <a class="nav-link" href="#inicio" (click)="collapseNavbar()">
+        <a class="nav-link" href="#inicio" (click)="collapseNavbar(); scrollTo('inicio');">
           <fa-icon [icon]="home" [fixedWidth]="true"></fa-icon> Inicio
         </a>
       </div>
       <div class="nav-item">
-        <a class="nav-link" href="#sobre" (click)="collapseNavbar()">
+        <a class="nav-link" href="#sobre" (click)="collapseNavbar(); scrollTo('sobre');">
           <fa-icon [icon]="info" [fixedWidth]="true"></fa-icon> Sobre az! player
         </a>
       </div>
       <div class="nav-item">
-        <a class="nav-link" href="#cambios" (click)="collapseNavbar()">
+        <a class="nav-link" href="#cambios" (click)="collapseNavbar(); scrollTo('cambios');">
           <fa-icon [icon]="changes" [fixedWidth]="true"></fa-icon> Cambios
         </a>
       </div>
       <div class="nav-item">
-        <a class="nav-link" href="#descargas" (click)="collapseNavbar()">
-          <fa-icon [icon]="download" [fixedWidth]="true"></fa-icon> Descargas
+        <a class="nav-link" href="#descargar" (click)="collapseNavbar(); scrollTo('descargar');">
+          <fa-icon [icon]="download" [fixedWidth]="true"></fa-icon> Descargar
         </a>
       </div>
       <div class="nav-item">
-        <a class="nav-link support" href="#" (click)="collapseNavbar()">
+        <a class="nav-link support" (click)="collapseNavbar(); openSupport();">
           <fa-icon class="icon-container" [classes]="['icon']" [icon]="heart" [fixedWidth]="true"></fa-icon> Apoya al proyecto
         </a>
       </div>

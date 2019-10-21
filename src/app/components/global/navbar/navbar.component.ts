@@ -1,5 +1,6 @@
 // Dependencias
-import { Component } from '@angular/core';
+import { Component, TemplateRef } from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 // Iconos
 import {
   faHome,
@@ -28,8 +29,13 @@ export class NavbarComponent {
   public github = faGithub;
   public collapse = faStream;
 
+  // Modal
+  public modalRef: BsModalRef;
+
   // Barra
   public isCollapsed = true;
+
+  constructor(private modalService: BsModalService) { }
 
   /**
    * Colapsar barra
@@ -52,8 +58,9 @@ export class NavbarComponent {
 
   /**
    * Abrir modal de ayuda
+   * @param template Referencia de template de Angular
    */
-  public openSupport(): boolean {
-    return false;
+  public openSupport(template: TemplateRef<any>): void {
+    this.modalRef = this.modalService.show(template);
   }
 }

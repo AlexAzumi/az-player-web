@@ -3,9 +3,12 @@
 </div>
 
 <div class="about-container">
-  <ngx-md class="about-information markdown" *ngIf="repositoryService.changelog; else noContent">
-    {{repositoryService.changelog}}
-  </ngx-md>
+  <div class="about-information">
+    <p class="release-title">{{repositoryService.releaseName}}</p>
+    <ngx-md class="markdown" *ngIf="repositoryService.changelog; else noContent">
+      {{repositoryService.changelog}}
+    </ngx-md>
+  </div>
   <ng-template #noContent>
     <p class="about-information">
       No se pudo obtener la información

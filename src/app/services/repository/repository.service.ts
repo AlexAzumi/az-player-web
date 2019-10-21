@@ -13,6 +13,8 @@ export class RepositoryService {
   private latestRelease;
   // Changelog
   public changelog: string;
+  // Nombre del lanzamiento
+  public releaseName: string;
   // Enlace de descarga
   public downloadLink: string;
 
@@ -29,6 +31,7 @@ export class RepositoryService {
       console.log(response);
       this.latestRelease = response;
       this.changelog = this.latestRelease.body;
+      this.releaseName = this.latestRelease.name;
       this.downloadLink = this.getDownloadLink(this.latestRelease.assets);
     }
   }

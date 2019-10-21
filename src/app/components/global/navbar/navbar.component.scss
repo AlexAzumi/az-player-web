@@ -117,3 +117,17 @@ $navbar-bg: #252525;
     }
   }
 }
+
+.support-header {
+  background-color: $primary;
+  color: $light;
+}
+
+.support-buttons {
+  display: flex;
+  justify-content: space-around;
+
+  .btn {
+    width: 100%;
+  }
+}

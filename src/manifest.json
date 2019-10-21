@@ -1,0 +1,16 @@
+{
+  "short_name": "az! player",
+  "name": "az! player | Reproduce tu música favorita de osu!",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-ico",
+      "sizes": "128x128"
+    }
+  ],
+  "start_url": "/index.html",
+  "theme_color": "#FF518C",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "portrait"
+}

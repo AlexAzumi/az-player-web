@@ -86,9 +86,18 @@ $info-box-bg: #F4F4F4;
     width: 90%;
 
     // Markdown para notas
-    &.markdown {
+    .markdown {
       padding: 1.5rem;
       text-align: left;
+    }
+
+    .release-title {
+      font-size: 2rem;
+      margin: 0;
+      padding-bottom: 0.5rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      border-bottom: 1px solid rgba($color: $dark, $alpha: 0.5);
     }
 
     // Descargar

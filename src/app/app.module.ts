@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { ModalModule } from 'ngx-bootstrap/modal';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxMdModule } from 'ngx-md';
@@ -31,7 +32,8 @@ import { DownloadComponent } from './components/download/download.component';
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
     HttpClientModule,
-    NgxMdModule.forRoot()
+    NgxMdModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [
     RepositoryService

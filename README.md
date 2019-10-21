@@ -1,27 +1,22 @@
-# AzPlayerWeb
+# Sitio web de az! player
+Sitio web dedicado a exponer la aplicación `az! player` al público en general
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
+<img src="https://i.ibb.co/Hp2DXQY/P-gina-web.png" alt="Sitio web de az! player">
 
-## Development server
+## Correr localmente
+El sitio web usa la **API** de ``GitHub`` para obtener la información de la última versión, cosa a tener en cuenta al momento de correr la página localmente.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Primero se necesita clonar el repositorio y entrar a la carpeta generada
+```
+git clone https://github.com/AlexAzumi/az-player-web.git
+cd az-player-web
+```
+Una vez clonado es necesario instalar las dependencias usando **npm**
+```
+npm install
+```
+Por último para correr la página localmente usa el siguiente comando
+```
+ng serve --open
+```
+**Nota:** El parámetro `--open` indica que se abra la página en el navegador de preferencia una vez terminada la transpilación

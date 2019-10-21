@@ -1,0 +1,27 @@
+<ng-template #supportModal>
+  <div class="modal-header support-header">
+    <h4 class="modal-title pull-left">¡Quiero apoyar a este proyecto!</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>
+      Este es un proyecto realizado enteramente como <b>pasatiempo</b>, pero como todos sabemos
+      no se puede vivir de sólo pasatiempos. <br>Por ello, si quieres apoyar para que esto crezca
+      y siga vigente puedes comprarme un <i>café</i> desde mi página de <b>Ko-Fi</b> (enlace más abajo).
+    </p>
+    <p>
+      También puedes inspirarme a continuar con esto regalándome osu!support, con eso me incentivas
+      a continuar y aparte aportas al futuro de este maravilloso juego rítmico llamado <b>osu!</b>.
+    </p>
+    <p>
+      Si contribuyes a este proyecto tu nombre será agregado a nuestra lista de personas
+      generosas (más aparte yo estaré muy agradecido contigo c:)
+    </p>
+    <div class="support-buttons">
+      <a class="btn btn-primary mr-2" href="https://ko-fi.com/alexazumi">Donar por Ko-Fi</a>
+      <a class="btn btn-primary" href="https://osu.ppy.sh/users/3783551">Mi perfil de osu!</a>
+    </div>
+  </div>
+</ng-template>

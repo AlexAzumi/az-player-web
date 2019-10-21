@@ -16,6 +16,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ChangelogComponent } from './components/changelog/changelog.component';
 import { DownloadComponent } from './components/download/download.component';
+import { SupportComponent } from './components/support/support.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DownloadComponent } from './components/download/download.component';
     HomeComponent,
     AboutComponent,
     ChangelogComponent,
-    DownloadComponent
+    DownloadComponent,
+    SupportComponent
   ],
   imports: [
     BrowserModule,

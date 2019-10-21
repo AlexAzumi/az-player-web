@@ -3,6 +3,9 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 
+// Colores
+$primary: #FF518C;
+
 .support-header {
   background-color: $primary;
   color: $light;

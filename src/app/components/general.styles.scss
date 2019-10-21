@@ -22,15 +22,16 @@ $info-box-bg: #F4F4F4;
 .title {
 	align-items: center;
 	background-color: $light;
+	box-shadow: 0 2px 0 rgba($color: $dark, $alpha: 0.5);
 	color: $title-color;
 	display: flex;
-	font-size: 3rem;
 	font-weight: 700;
 	justify-content: center;
 	margin-top: 1rem;
 	text-align: center;
 	vertical-align: middle;
-	box-shadow: 0 2px 0 rgba($color: $dark, $alpha: 0.5);
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
 
 	.logo {
 		height: 65px;

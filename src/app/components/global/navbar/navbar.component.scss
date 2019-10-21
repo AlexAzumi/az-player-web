@@ -76,6 +76,7 @@ $navbar-bg: #252525;
         display: block;
         color: rgba($color: $light, $alpha: 0.7);
         transition: 150ms;
+        font-family: 'Poppins', Arial;
 
         &:hover {
           color: $light;

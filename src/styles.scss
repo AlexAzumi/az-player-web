@@ -13,6 +13,10 @@ $theme-colors: (
 
 /* Estilos personalizados */
 
+* {
+  font-family: 'Muli', Arial, Helvetica, sans-serif;
+}
+
 // HTML & BODY
 html, body {
   height: 100%;

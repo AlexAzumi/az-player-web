@@ -3,6 +3,8 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 
+@import '~rfs/scss';
+
 // Colores
 $title-color: #252525;
 $info-box-bg: #F4F4F4;
@@ -76,13 +78,13 @@ $info-box-bg: #F4F4F4;
   padding-top: 1rem;
 
   .about-information {
-    font-size: 1.2rem;
+    @include font-size(1.2rem);
+    @include padding(2rem);
     background-color: $info-box-bg;
     border-radius: 1rem;
     box-shadow: 2px 2px 0 rgba($color: $dark, $alpha: 0.25);
     color: $gray-800;
     margin: 0;
-    padding: 2rem;
     text-align: center;
     width: 90%;
 
@@ -93,7 +95,7 @@ $info-box-bg: #F4F4F4;
     }
 
     .release-title {
-      font-size: 2rem;
+      @include font-size(2rem);
       margin: 0;
       padding-bottom: 0.5rem;
       text-overflow: ellipsis;
@@ -107,7 +109,7 @@ $info-box-bg: #F4F4F4;
       justify-content: space-around;
 
       .big-button {
-        font-size: 1.6rem;
+        @include font-size(1.6rem);
         padding: 1rem;
         border-radius: 1rem;
         width: 100%;

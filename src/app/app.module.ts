@@ -17,6 +17,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ChangelogComponent } from './components/changelog/changelog.component';
 import { DownloadComponent } from './components/download/download.component';
 import { SupportComponent } from './components/support/support.component';
+import { FooterComponent } from './components/global/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SupportComponent } from './components/support/support.component';
     AboutComponent,
     ChangelogComponent,
     DownloadComponent,
-    SupportComponent
+    SupportComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

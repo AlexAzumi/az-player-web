@@ -4,7 +4,7 @@
 @import '~bootstrap/scss/mixins';
 
 // Colores
-$primary: #FF518C;
+$primary: #ff518c;
 $navbar-bg: #252525;
 
 .navbar {
@@ -21,7 +21,7 @@ $navbar-bg: #252525;
     width: 100%;
   }
 
-	.collapse-btn {
+  .collapse-btn {
     color: $light;
     align-content: center;
 
@@ -44,15 +44,15 @@ $navbar-bg: #252525;
 
   // Logo
   .logo {
-		filter: brightness(70%);
-		width: 70px;
+    filter: brightness(70%);
+    width: 70px;
     align-self: center;
-		margin-bottom: 1.5rem;
-		transition: filter 250ms;
+    margin-bottom: 1.5rem;
+    transition: filter 250ms;
 
-		&:hover {
-			filter: brightness(100%);
-		}
+    &:hover {
+      filter: brightness(100%);
+    }
   }
 
   .logo-mobile {
@@ -82,39 +82,40 @@ $navbar-bg: #252525;
           color: $light;
           padding-left: 0.75rem;
           text-decoration: none;
-				}
+        }
 
-				// Apoyo
-				&.support {
+        // Apoyo
+        &.support {
           color: $primary;
 
           &:hover {
             cursor: pointer;
           }
-				}
+        }
       }
     }
   }
+}
 
-  // Derechos de autor
-  .copyright {
-		color: $light;
-		padding-top: 1rem;
-    margin-top: auto;
-    text-align: center;
+// Derechos de autor
+.copyright {
+  color: $light;
+  background-color: $navbar-bg;
+  padding-top: 1rem;
+  margin-top: auto;
+  text-align: center;
 
-    // Sin márgen
-    .no-margin {
-      margin: 0;
-    }
+  // Sin márgen
+  .no-margin {
+    margin: 0;
+  }
 
-    // Enlace a perfil de GitHub
-    .github {
-      display: block;
+  // Enlace a perfil de GitHub
+  .github {
+    display: block;
 
-      .github-link {
-        color: $primary;
-      }
+    .github-link {
+      color: $primary;
     }
   }
 }

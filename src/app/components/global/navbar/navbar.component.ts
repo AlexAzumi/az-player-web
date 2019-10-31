@@ -1,6 +1,5 @@
 // Dependencias
 import { Component } from '@angular/core';
-import { BsModalRef } from 'ngx-bootstrap/modal';
 // Iconos
 import {
   faHome,
@@ -8,11 +7,9 @@ import {
   faWrench,
   faDownload,
   faHeart,
-  faStream
+  faBars
 } from '@fortawesome/free-solid-svg-icons';
-import {
-  faGithub
-} from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -27,7 +24,7 @@ export class NavbarComponent {
   public download = faDownload;
   public heart = faHeart;
   public github = faGithub;
-  public collapse = faStream;
+  public collapse = faBars;
 
   // Barra
   public isCollapsed = true;
@@ -47,7 +44,7 @@ export class NavbarComponent {
    */
   public scrollTo(id: string): boolean {
     const element = document.getElementById(id);
-    element.scrollIntoView({behavior: 'smooth'});
+    element.scrollIntoView({ behavior: 'smooth' });
     return false;
   }
 }

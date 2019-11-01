@@ -26,7 +26,9 @@ export class RepositoryService {
    * Obtener último lanzamiento en GitHub
    */
   private async getLatestRelease() {
-    const response = await this.httpClient.get(`${API_ENDPOINT}/repos/AlexAzumi/az-player/releases/latest`).toPromise();
+    const response = await this.httpClient
+      .get(`${API_ENDPOINT}/repos/AlexAzumi/az-player/releases/latest`)
+      .toPromise();
     if (response) {
       console.log(response);
       this.latestRelease = response;
@@ -41,6 +43,7 @@ export class RepositoryService {
    * @param assets Assets del lanzamiento
    */
   private getDownloadLink(assets: Array<any>): string {
-    return assets.filter(item => item.name.includes('.exe'))[0].browser_download_url;
+    return assets.filter(item => item.name.includes('.exe'))[0]
+      .browser_download_url;
   }
 }

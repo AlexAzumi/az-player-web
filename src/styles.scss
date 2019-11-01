@@ -4,12 +4,11 @@
 @import '~bootstrap/scss/mixins';
 
 // Colores
-$primary: #FF518C;
+$primary: #ff518c;
 
 $theme-colors: (
   'primary': $primary
 );
-
 
 /* Estilos personalizados */
 
@@ -18,17 +17,18 @@ $theme-colors: (
 }
 
 // HTML & BODY
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
-	background-image: url('assets/img/bg.png');
+  background-image: url('assets/img/bg.png');
 }
 
 // Icono de corazón
 .nav-link:hover .icon-container > .icon {
-	animation: heart-animation 1s ease infinite;
+  animation: heart-animation 1s ease infinite;
 }
 
 .h-100 {
@@ -37,35 +37,34 @@ body {
 
 // Contenedor principal
 .main-container {
-	overflow-y: auto;
+  overflow-y: auto;
 }
 
 @keyframes heart-animation {
-	0% {
-		transform: scale(.75);
-	}
-	20% {
-		transform: scale(1);
-	}
-	40% {
-		transform: scale(.75);
-	}
-	60% {
-		transform: scale(1);
-	}
-	80% {
-		transform: scale(.75);
-	}
-	100% {
-		transform: scale(.75);
-	}
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0.75);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.75);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 // Modal
 .modal-content {
   border: none !important;
 }
-
 
 /* Opcional de Bootstrap */
 @import '~bootstrap/scss/buttons';

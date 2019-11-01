@@ -1,7 +1,7 @@
 # Sitio web de az! player
 Sitio web dedicado a exponer la aplicación `az! player` al público en general
 
-<img src="https://i.ibb.co/Hp2DXQY/P-gina-web.png" alt="Sitio web de az! player">
+<img src="https://i.ibb.co/Qv5C3WV/P-gina-web-1-1.png" alt="Sitio web de az! player">
 
 ## Correr localmente
 El sitio web usa la **API** de ``GitHub`` para obtener la información de la última versión, cosa a tener en cuenta al momento de correr la página localmente.

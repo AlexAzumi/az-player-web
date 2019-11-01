@@ -79,7 +79,10 @@ $info-box-bg: #f4f4f4;
 
   .about-information {
     @include font-size(1.2rem);
-    @include padding(2rem);
+    @include padding-bottom(0.8rem);
+    @include padding-left(1.3rem);
+    @include padding-right(1.3rem);
+    @include padding-top(0.8rem);
     background-color: $info-box-bg;
     border-radius: 1rem;
     box-shadow: 2px 2px 0 rgba($color: $dark, $alpha: 0.25);
@@ -88,6 +91,10 @@ $info-box-bg: #f4f4f4;
     text-align: center;
     width: 90%;
 
+    @include media-breakpoint-down(md) {
+      width: 97%;
+    }
+
     // Markdown para notas
     .markdown {
       padding: 1.5rem;
@@ -95,7 +102,7 @@ $info-box-bg: #f4f4f4;
     }
 
     .release-title {
-      @include font-size(2rem);
+      @include font-size(1.8rem);
       margin: 0;
       padding-bottom: 0.5rem;
       text-overflow: ellipsis;
@@ -110,7 +117,7 @@ $info-box-bg: #f4f4f4;
 
       .big-button {
         @include font-size(1.5rem);
-        padding: 1rem;
+        @include padding(1rem);
         border-radius: 1rem;
         width: 100%;
       }

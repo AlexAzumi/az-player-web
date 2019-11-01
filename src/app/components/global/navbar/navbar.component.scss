@@ -73,10 +73,15 @@ $navbar-bg: #252525;
 
       // Enlace
       .nav-link {
+        @include font-size(1.5rem);
         display: block;
         color: rgba($color: $light, $alpha: 0.7);
         transition: 150ms;
         font-family: 'Poppins', Arial;
+
+        @include media-breakpoint-down(md) {
+          @include font-size(1.7rem);
+        }
 
         &:hover {
           color: $light;

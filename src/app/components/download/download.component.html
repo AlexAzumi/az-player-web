@@ -1,19 +1,26 @@
 <div id="descargar" class="title">
-	<p class="m-0">Descargar</p>
+  <p class="m-0">Descargar</p>
 </div>
 
 <div class="about-container">
   <div class="about-information download">
-    <a
-      *ngIf="repositoryService.downloadLink"
-      class="btn btn-primary big-button mr-3"
-      [href]="repositoryService.downloadLink">
-      Descargar última versión
-    </a>
-    <a
-      class="btn btn-primary big-button"
-      href="https://github.com/AlexAzumi/az-player/releases">
-      Versiones anteriores
-    </a>
+    <p class="so-warning">
+      Sólo disponible para sistema operativo Windows (Windows 7 o superior)
+    </p>
+    <div class="download-buttons">
+      <a
+        *ngIf="repositoryService.downloadLink"
+        class="btn btn-primary big-button mr-3"
+        [href]="repositoryService.downloadLink"
+      >
+        Descargar última versión
+      </a>
+      <a
+        class="btn btn-primary big-button"
+        href="https://github.com/AlexAzumi/az-player/releases"
+      >
+        Versiones anteriores
+      </a>
+    </div>
   </div>
 </div>

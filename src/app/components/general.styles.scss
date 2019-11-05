@@ -113,13 +113,22 @@ $info-box-bg: #f4f4f4;
     // Descargar
     &.download {
       display: flex;
-      justify-content: space-around;
+      flex-direction: column;
 
-      .big-button {
-        @include font-size(1.5rem);
-        @include padding(1rem);
-        border-radius: 1rem;
-        width: 100%;
+      .so-warning {
+        color: $gray-800;
+      }
+
+      .download-buttons {
+        display: flex;
+        justify-content: space-around;
+
+        .big-button {
+          @include font-size(1.5rem);
+          @include padding(1rem);
+          border-radius: 1rem;
+          width: 100%;
+        }
       }
     }
   }

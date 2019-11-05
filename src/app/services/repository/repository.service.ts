@@ -30,7 +30,6 @@ export class RepositoryService {
       .get(`${API_ENDPOINT}/repos/AlexAzumi/az-player/releases/latest`)
       .toPromise();
     if (response) {
-      console.log(response);
       this.latestRelease = response;
       this.changelog = this.latestRelease.body;
       this.releaseName = this.latestRelease.name;
